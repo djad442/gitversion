@@ -53,7 +53,7 @@ class Build : NukeBuild
             DotNetRestore(s => s
                 .SetProjectFile(Solution));
         });
-    //F2.....
+    //F2.....plus
     Target Compile => _ => _
         .DependsOn(Restore)
         .Executes(() =>
